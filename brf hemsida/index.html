@@ -39,7 +39,8 @@ const RSS_URL = `https://www.brfskogsstigen3.se/images/rss.xml`;
 
 fetch(RSS_URL, {
    headers: {
-   "Access-Control-Allow-Origin": "*"
+   "Access-Control-Allow-Origin": "*",
+   "mode": "no-cors"
    }
 })
   .then(response => response.text())
